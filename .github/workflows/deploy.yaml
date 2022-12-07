@@ -14,3 +14,7 @@ jobs:
       run: npm ci && npx playwright install --with-deps
     - name: Run tests
       run: echo "npx playwright test"
+    - name: Run tests 02
+      run: echo github.event_name
+    - name: Run tests 02
+      run: echo github.event.deployment_status.state
