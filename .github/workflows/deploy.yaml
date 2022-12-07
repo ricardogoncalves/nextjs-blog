@@ -19,4 +19,4 @@ jobs:
     - name: Run tests 03
       run: echo ${{ github.event.deployment_status.state }}
     - name: Run tests 04
-      run: echo ${{ github.ref_name }}
+      run: echo ${{ github.event.deployment_status.environment }}
