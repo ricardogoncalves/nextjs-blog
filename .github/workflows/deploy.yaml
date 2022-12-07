@@ -4,7 +4,7 @@ name: Playwright Tests
 on:
   deployment_status:
     
-  run-e2es:
+  e2e:
     if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success'
     runs-on: ubuntu-latest
     steps:
