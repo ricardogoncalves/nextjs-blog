@@ -16,5 +16,7 @@ jobs:
       run: echo "npx playwright test"
     - name: Run tests 02
       run: echo ${{ github.event_name }}
-    - name: Run tests 02
+    - name: Run tests 03
       run: echo ${{ github.event.deployment_status.state }}
+    - name: Run tests 04
+      run: echo ${{ github.ref_name }}
